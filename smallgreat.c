@@ -3,27 +3,26 @@
 void main()
 {
 clrscr();
-int i,a[10],great;
+int i,a[10],high;
 printf("Enter the array limit\n");
 scanf("%d",&n);
 for(i=0;i<n;i++)
 {
 scanf("%d",&a[i]);
 }
-great=a[0],small=a[0];
+high=a[0],low=a[0];
 for(i=0;i<n;i++)
 {
-if(a[i]>great)
+if(a[i]>high)
 {
-great=a[i];
+high=a[i];
 }
-if(a[i]<small)
+if(a[i]<low)
 {
-small=a[i];
+low=a[i];
 }
 }
-printf("Greatest number in array  is %d",great);
-printf("Smallest number in array is %d",small);
-
+printf("Highest number in array  is %d",high);
+printf("Lowest number in array is %d",low);
 getch();
 }
